@@ -3,12 +3,12 @@ environment: 'dev'
 dev:
     name: 'Pokedex'
     description: 'Just a simple inventory manager'
-    url: 'http://localhost:80/'
+    url: 'http://192.168.99.100:80/'
     database:
         username: 'root'
         password: ''
         name: 'inventory'
-        host: 'localhost'
+        host: '192.168.99.100'
         type: 'mysql'
     debug: true
     twig:
@@ -16,7 +16,7 @@ dev:
     salt: 'test'
     mail:
         from: 'root@root.com'
-        host: 'localhost'
+        host: '192.168.99.100'
         username: null
         password: null
         port: 1025
@@ -24,12 +24,12 @@ dev:
 prod:
     name: 'Pokedex'
     description: 'Just a simple inventory manager'
-    url: 'http://localhost:80/'
+    url: 'http://192.168.99.100:80/'
     database:
         username: 'root'
         password: ''
         name: 'inventory'
-        host: 'localhost'
+        host: '192.168.99.100'
         type: 'mysql'
     debug: false
     twig:
@@ -37,7 +37,7 @@ prod:
     salt: 'test'
     mail:
         from: 'root@root.com'
-        host: 'localhost'
+        host: '192.168.99.100'
         username: null
         password: null
         port: 1025
